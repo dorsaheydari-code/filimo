@@ -1,0 +1,51 @@
+
+    #main-header {
+        z-index: 50; 
+      }
+  
+  
+      .glassy-header {
+        background-color: rgba(70, 66, 66, 0.7) ; 
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .slider {
+       
+        position: relative; 
+        /* rgba(43, 43, 43, 0.7) */
+        z-index: 1; 
+        width: 100%;
+        height: 100vh;
+      }
+  
+      .swiper {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 1;
+      }
+  
+      .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      .swiper-slide {
+        /* این استایل‌ها برای خود اسلاید */
+        overflow: hidden; /* اطمینان از اینکه چیزی بیرون نمی‌زند */
+        display: flex; /* برای هم‌ترازی محتوای داخل اسلاید */
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .slide-content {
+        width: 100%;
+        height: 100%;
+        background-size: cover; /* تصویر کل باکس را بپوشاند */
+        background-position: center top; /* تصویر را به سمت بالا بچسباند */
+        background-repeat: no-repeat;
+      }
+/*       
+      text-[#e77d44] text-[#6a6a6a]  */
