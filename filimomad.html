@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>فیلیمو مدرسه</title>
-    <link rel="shortcut icon" href="./public/images/icons/myicon.png">
+    <link rel="shortcut icon" href="./public/images/filimomad/images.png">
 </head>
 <body class="bg-gray-50">
 <!-- menu -->
@@ -19,7 +19,7 @@
        
     <div class="flex items-center gap-8">
         <a href="#" class="flex items-center shrink-0">
-            <img src="./public/images/images/icons/filimo-madrese.svg" alt="filimo-madrese" class="h-4 w-auto">
+            <img src="./public/images/filimomad/full-logo.svg" alt="filimo-madrese" class="h-4 w-auto">
         </a>
         
         <!-- desktop menu-->
@@ -31,7 +31,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                 </a>
                 <div class="absolute top-full right-0 w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100">
-                    <ul class="py-2">
+                    <ul id="grade-links" class="py-2">
                         <li><a href="#" class="block px-4 py-2 hover:bg-[#f8f8f8] text-[#858585]">پیش‌دبستانی</a></li>
                         <li><a href="#" class="block px-4 py-2 hover:bg-[#f8f8f8] text-[#858585]">اول</a></li>
                         <li><a href="#" class="block px-4 py-2 hover:bg-[#f8f8f8] text-[#858585]">دوم</a></li>
@@ -98,8 +98,8 @@
       <div class="w-full max-w-3xl shrink-0">
         <div class="aspect-video bg-white rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)] border-4 border-white">
           <video class="w-full h-full object-cover" controls>
-            <source src="./public/video/filimomad.mp4" type="video/mp4">
-          </video>
+            <source id="filimo-school-video" src="./public/video/filimomad2.mp4" type="video/mp4">
+        </video>
         </div>
       </div>
   
@@ -186,10 +186,10 @@
 <!-- end lasson2 -->
 <!-- lessson 3 -->
 <div dir="rtl" class="container mx-auto px-4 py-10 text-center">
-  <h2 class="text-3xl font-bold mb-4 text-[#606060]">
+  <h2 id="skills-title" class="text-3xl font-bold mb-4 text-[#606060]">
     مهارت‌هایی که در کتاب‌های درسی نیست!
   </h2>
-  <p class="text-lg text-[#444444] mb-12 leading-relaxed">
+  <p id="skills-description" class="text-lg text-[#444444] mb-12 leading-relaxed">
     زبان کر‌ه‌ای، ساخت اسلایم، سفر به منظومه‌ی شمسی و بیش از 
     <span class="font-bold text-[#444444]"> ۶۰ مهارت کاربردی</span>
     را در فیلیمومدرسه یاد بگیر.
@@ -222,11 +222,11 @@
            alt="md" 
            class="w-full max-w-[500px] h-auto object-contain drop-shadow-[0_20px_30px_rgba(255,238,201,0.8)]">
     </div>
-    <div class="flex-1 flex flex-col items-center text-center">
+    <div id="always-title" class="flex-1 flex flex-col items-center text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#606060]">
         همیشه و همه‌جا، همراهت!
       </h2>
-      <p class="text-lg text-[#606060] mb-10 leading-relaxed">
+      <p id="always-discription" class="text-lg text-[#606060] mb-10 leading-relaxed">
         با
         <span class="font-bold text-[#444444]"> هر دستگاهی </span>
         که داری و از 
@@ -234,17 +234,17 @@
         وارد فیلیمومدرسه شو.
       </p>
       <div class="w-full max-w-md flex flex-col gap-4">
-        <a href="#" class="w-full bg-[#f9bd36] hover:bg-[#e7c473] text-[#444444] font-bold text-lg px-6 py-4 rounded-2xl shadow-[0_6px_0_#f2a72e] transition-all active:translate-y-1 active:shadow-none duration-200 flex items-center justify-center gap-2">
+        <a id="android-tv-button" href="#" class="w-full bg-[#f9bd36] hover:bg-[#e7c473] text-[#444444] font-bold text-lg px-6 py-4 rounded-2xl shadow-[0_6px_0_#f2a72e] transition-all active:translate-y-1 active:shadow-none duration-200 flex items-center justify-center gap-2">
           اپلیکیشن اندروید تلویزیون
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </a>
         <div class="flex flex-row gap-4 w-full">
-          <a href="#" class="flex-1 bg-[#f9bd36] hover:bg-[#e7c473] text-[#444444] font-bold text-base px-4 py-4 rounded-2xl shadow-[0_6px_0_#f2a72e] transition-all active:translate-y-1 active:shadow-none duration-200 flex items-center justify-center">
+          <a id="android-button" href="#" class="flex-1 bg-[#f9bd36] hover:bg-[#e7c473] text-[#444444] font-bold text-base px-4 py-4 rounded-2xl shadow-[0_6px_0_#f2a72e] transition-all active:translate-y-1 active:shadow-none duration-200 flex items-center justify-center">
             سیستم عامل اندروید
           </a>
-          <a href="#" class="flex-1 bg-[#f9bd36] hover:bg-[#e7c473] text-[#444444] font-bold text-base px-4 py-4 rounded-2xl shadow-[0_6px_0_#f2a72e] transition-all active:translate-y-1 active:shadow-none duration-200 flex items-center justify-center">
+          <a id="ios-button" href="#" class="flex-1 bg-[#f9bd36] hover:bg-[#e7c473] text-[#444444] font-bold text-base px-4 py-4 rounded-2xl shadow-[0_6px_0_#f2a72e] transition-all active:translate-y-1 active:shadow-none duration-200 flex items-center justify-center">
             سیستم عامل iOS
           </a>
         </div>
@@ -256,8 +256,8 @@
 <!-- comment -->
 <div dir="rtl" class="container mx-auto px-4 py-16 bg-gray-50">
   <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold text-[#606060] mb-4">تجربه‌ی واقعی، نتایج واقعی!</h2>
-    <p class="text-[#606060]">فیلیمومدرسه یادگیری را به یک مسیر ساده و جذاب تبدیل کرده. تو هم به ۶۰۰ هزار دانش‌آموز فیلیمومدرسه بپیوند!</p>
+    <h2 id="testimonials-title" class="text-3xl font-bold text-[#606060] mb-4">تجربه‌ی واقعی، نتایج واقعی!</h2>
+    <p id="testimonials-description" class="text-[#606060]">فیلیمومدرسه یادگیری را به یک مسیر ساده و جذاب تبدیل کرده. تو هم به ۶۰۰ هزار دانش‌آموز فیلیمومدرسه بپیوند!</p>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 transition hover:shadow-md">
@@ -269,11 +269,11 @@
     </div>
     
     <div>
-      <h4 class="font-bold text-[#606060]">امیرمحمد، چهارم</h4>
+      <h4 id="testimonial-name-1" class="font-bold text-[#606060]">امیرمحمد، چهارم</h4>
     </div>
   </div>
   
-  <p class="text-[#606060] text-sm leading-relaxed">
+  <p id="testimonial-name-1"  class="text-[#606060] text-sm leading-relaxed">
     انصافا نسبت به قیمتش خیلی می‌ارزه! الان هر کلاسی ثبت‌نام کنی بالای یه تومنه!
   </p>
 </div>
@@ -286,11 +286,11 @@
         </div>
         
         <div>
-          <h4 class="font-bold text-[#606060]"> باران، ششم</h4>
+          <h4 id="testimonial-name-2"  class="font-bold text-[#606060]"> باران، ششم</h4>
         </div>
       </div>
       
-      <p class="text-[#606060] text-sm leading-relaxed">
+      <p id="testimonial-name-2" class="text-[#606060] text-sm leading-relaxed">
         ✓ توضیح عالی
         ✓ تست ها و سوال ها
         عالییییییییی حتما نصب کنید.
@@ -305,11 +305,11 @@
         </div>
         
         <div>
-          <h4 class="font-bold text-[#606060]"> نیکا، هفتم</h4>
+          <h4 id="testimonial-name-3" class="font-bold text-[#606060]"> نیکا، هفتم</h4>
         </div>
       </div>
       
-      <p class="text-[#606060] text-sm leading-relaxed">
+      <p id="testimonial-name-3"  class="text-[#606060] text-sm leading-relaxed">
         زبان کره‌ای عالی! الان میتونم آهنگ‌های بی تی اس و کی‌پاپ رو بدون زیرنویس فارسی بفهمم 🤟
       </p>
     </div>
@@ -322,11 +322,11 @@
         </div>
         
         <div>
-          <h4 class="font-bold text-[#606060]">  محمدرضا، ششم</h4>
+          <h4 id="testimonial-name-4"  class="font-bold text-[#606060]">  محمدرضا، ششم</h4>
         </div>
       </div>
       
-      <p class="text-[#606060] text-sm leading-relaxed">
+      <p id="testimonial-name-4" class="text-[#606060] text-sm leading-relaxed">
         اسکرچ رو با فیلیمومدرسه یاد گرفتم. امیدوارم پایتون هم بتونم یاد بگیرم و جاهای مختلف رو هک کنم 😁
       </p>
     </div>
@@ -335,14 +335,14 @@
 <!-- end comment -->
 <!-- end -->
 <div dir="rtl" class="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-10 bg-[#fff4db]">
-  <div class="w-full md:w-1/2 flex justify-center">
+  <div id="end-image" class="w-full md:w-1/2 flex justify-center">
     <img src="./public/images/filimomad/end.jpg" alt="end" class="rounded-3xl w-full max-w-md object-cover shadow-lg">
   </div>
   <div class="w-full md:w-1/2 text-center md:text-right">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#606060]">
+    <h2 id="end-title" class="text-3xl md:text-4xl font-bold mb-6 text-[#606060]">
       مورد تأیید بهترین معلم‌ها
     </h2>
-    <p class="text-lg md:text-xl text-[#444444] leading-relaxed">
+    <p id="end-discription"  class="text-lg md:text-xl text-[#444444] leading-relaxed">
       <span class="font-bold text-[#444444]">بهترین معلم‌های کشور </span>
       هم درس‌خواندن با 
       <span class="font-bold text-[#444444]">فیلیمومدرسه</span>
@@ -351,15 +351,15 @@
   </div>
 </div>
 <!-- footer -->
-<footer class="fixed bottom-4 left-4 right-4 md:left-10 md:right-10 z-50">
+<foote class="fixed bottom-4 left-4 right-4 md:left-10 md:right-10 z-50">
   <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] border border-gray-100 px-8 py-6 flex items-center justify-between">
     
     <div class="text-right">
-      <h3 class="text-xl md:text-2xl font-bold text-[#444444]">تابستان مهارتی فیلیمومدرسه!</h3>
+      <h3  id="footer-title" class="text-xl md:text-2xl font-bold text-[#444444]">تابستان مهارتی فیلیمومدرسه!</h3>
       <p class="text-sm md:text-base text-gray-500 mt-1"></p>
     </div>
     <div>
-      <a href="#" class="bg-[#5fd997] hover:bg-[#4bc783] text-[#444444] font-bold text-sm md:text-lg px-6 md:px-10 py-3 rounded-2xl shadow-[0_6px_0_#3fa870] transition-all active:translate-y-1 active:shadow-none duration-200 inline-flex items-center gap-2">
+      <a id="footer-button" href="#" class="bg-[#5fd997] hover:bg-[#4bc783] text-[#444444] font-bold text-sm md:text-lg px-6 md:px-10 py-3 rounded-2xl shadow-[0_6px_0_#3fa870] transition-all active:translate-y-1 active:shadow-none duration-200 inline-flex items-center gap-2">
         ورود به فیلیمو مدرسه
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
@@ -367,7 +367,8 @@
       </a>
     </div>
   </div>
-</footer>
+</foote>
 <!--end footer -->
+<script type="module" src="./src/js/filimoschool.js"></script>
 </body>
 </html>

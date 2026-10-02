@@ -1,0 +1,888 @@
+{
+    "movieCategories": [
+      {
+        "id": 1,
+        "title": "انیمیشن"
+      },
+      {
+        "id": 2,
+        "title": "وحشت"
+      },
+      {
+        "id": 3,
+        "title": "هیجان انگیز"
+      },
+      {
+        "id": 4,
+        "title": "علمی تخیلی"
+      },
+      {
+        "id": 5,
+        "title": "ماجراجویی"
+      },
+      {
+        "id": 6,
+        "title": "جنایی"
+      },
+      {
+        "id": 7,
+        "title": "رازآلود"
+      },
+      {
+        "id": 8,
+        "title": "مستند"
+      },
+      {
+        "id": 9,
+        "title": "تاریخی"
+      },
+      {
+        "id": 10,
+        "title": "بیوگرافی"
+      },
+      {
+        "id": 11,
+        "title": "کمدی"
+      },
+      {
+        "id": 12,
+        "title": "اکشن"
+      }
+    ],
+    "seriesCategories": [
+      {
+        "id": 1,
+        "title": "کمدی"
+      },
+      {
+        "id": 2,
+        "title": "ریلیتی شو"
+      },
+      {
+        "id": 3,
+        "title": "خانوادگی"
+      },
+      {
+        "id": 4,
+        "title": "عاشقانه"
+      },
+      {
+        "id": 5,
+        "title": "وحشت"
+      },
+      {
+        "id": 6,
+        "title": "اکشن"
+      },
+      {
+        "id": 7,
+        "title": "جنگی"
+      },
+      {
+        "id": 8,
+        "title": "مستند"
+      },
+      {
+        "id": 9,
+        "title": "جنایی"
+      },
+      {
+        "id": 10,
+        "title": "تاریخی"
+      },
+      {
+        "id": 11,
+        "title": "علمی تخیلی"
+      },
+      {
+        "id": 12,
+        "title": "هیجان انگیز"
+      },
+      {
+        "id": 13,
+        "title": "معمایی"
+      },
+      {
+        "id": 14,
+        "title": "تاک شو"
+      },
+      {
+        "id": 15,
+        "title": "ماجراجویی"
+      },
+      {
+        "id": 16,
+        "title": "گیم شو"
+      },
+      {
+        "id": 17,
+        "title": "فانتزی"
+      }
+    ],
+    "collections": [
+      {
+        "id": 1,
+        "title": "مخصوص نابینایان"
+      },
+      {
+        "id": 2,
+        "title": "مخصوص ناشنوایان"
+      },
+      {
+        "id": 3,
+        "title": "250 فیلم برتر IMDB"
+      },
+      {
+        "id": 4,
+        "title": "برگزیدگان جشنواره ها"
+      },
+      {
+        "id": 5,
+        "title": "پرفروش های سینمای ایران"
+      },
+      {
+        "id": 6,
+        "title": "فیلم و سریال کره‌ای"
+      },
+      {
+        "id": 7,
+        "title": "سریال ترکی"
+      },
+      {
+        "id": 8,
+        "title": "فیلم هندی"
+      },
+      {
+        "id": 9,
+        "title": "انیمه"
+      },
+      {
+        "id": 10,
+        "title": "همه لیست‌ها"
+      }
+    ],
+    "swiperSlides": [
+        {
+          "id": 1,
+          "image": "./public/images/images/swiper/alide1.webp",
+          "icon": "./public/images/svg/maria.webp",
+          "title": "بر اساس داستانی واقعی",
+          "type": "اختصاصی",
+          "schedule": "",
+          "buttonType": "cinema",
+          "hasPlay": true
+        },
+        {
+          "id": 2,
+          "image": "./public/images/images/swiper/slide2.webp",
+          "icon": "./public/images/svg/gavazn.webp",
+          "title": "تکلیف این بازی باید روشن شه",
+          "type": "اختصاصی",
+          "schedule": "",
+          "buttonType": "cinema",
+          "hasPlay": true
+        },
+        {
+          "id": 3,
+          "image": "./public/images/images/swiper/slide9.webp",
+          "icon": "./public/images/svg/badnam.webp",
+          "title": "منتشر شد",
+          "type": "اختصاصی",
+          "schedule": "",
+          "buttonType": "more",
+          "hasPlay": true
+        },
+        {
+          "id": 4,
+          "image": "./public/images/images/swiper/slide3.webp",
+          "icon": "./public/images/svg/spider.webp",
+          "title": "منشور، گفتگوی انسان با انسان",
+          "type": "اختصاصی",
+          "schedule": "",
+          "buttonType": "more",
+          "hasPlay": false
+        },
+        {
+          "id": 5,
+          "image": "./public/images/images/swiper/slide8.webp",
+          "icon": "./public/images/svg/kimdi.webp",
+          "title": "مسابقه ای جذاب و هیجان انگیز",
+          "type": "اختصاصی",
+          "schedule": "چهارشنبه‌ها، ساعت ۸ صبح",
+          "buttonType": "more",
+          "hasPlay": false
+        },
+        {
+          "id": 6,
+          "image": "./public/images/images/swiper/slide7.webp",
+          "icon": "./public/images/svg/tehran.webp",
+          "title": "این شراکت زندگیت رو زیر و رو می‌کنه",
+          "type": "اختصاصی",
+          "schedule": "",
+          "buttonType": "cinema",
+          "hasPlay": true
+        },
+        {
+          "id": 7,
+          "image": "./public/images/images/swiper/slide15.webp",
+          "icon": "./public/images/svg/eshgh.webp",
+          "title": "عشق میتونه مرده رو زنده کنه",
+          "type": "اختصاصی",
+          "schedule": "",
+          "buttonType": "cinema",
+          "hasPlay": true
+        },
+        {
+          "id": 8,
+          "image": "./public/images/images/swiper/slide14.webp",
+          "icon": "./public/images/svg/manoto.webp",
+          "title": "من تو من با علی فتح الله زاده",
+          "type": "اختصاصی",
+          "schedule": "",
+          "buttonType": "more",
+          "hasPlay": true
+        },
+        {
+          "id": 9,
+          "image": "./public/images/images/swiper/slide5.webp",
+          "icon": "./public/images/svg/manshor.webp",
+          "title": "منشور، گفتگوی انسان با انسان",
+          "type": "اختصاصی",
+          "schedule": "",
+          "buttonType": "more",
+          "hasPlay": false
+        },
+        {
+          "id": 10,
+          "image": "./public/images/images/swiper/slide12.webp",
+          "icon": "./public/images/svg/sham.webp",
+          "title": "مسابقه به میزبانی حدیث تهرانی",
+          "type": "اختصاصی",
+          "schedule": "سه‌شنبه‌ها، ساعت ۸ صبح",
+          "buttonType": "more",
+          "hasPlay": false
+        },
+        {
+          "id": 11,
+          "image": "./public/images/images/swiper/slide13.webp",
+          "icon": "./public/images/svg/mortal.webp",
+          "title": "خشمی جنون آمیز",
+          "type": "",
+          "schedule": "",
+          "buttonType": "more",
+          "hasPlay": false
+        }
+      ],
+      "specialItems": [
+        {
+          "id": 1,
+          "image": "./public/images/images/swiper/alide1.webp",
+          "title": "تصویر ویژه 1"
+        },
+        {
+          "id": 2,
+          "image": "./public/images/images/swiper/slide2.webp",
+          "title": "تصویر ویژه 2"
+        },
+        {
+          "id": 3,
+          "image": "./public/images/images/swiper/slide3.webp",
+          "title": "تصویر ویژه 3"
+        },
+        {
+          "id": 4,
+          "image": "./public/images/images/swiper/slide4.webp",
+          "title": "تصویر ویژه 4"
+        },
+        {
+          "id": 5,
+          "image": "./public/images/images/swiper/slide5.webp",
+          "title": "تصویر ویژه 5"
+        },
+        {
+          "id": 6,
+          "image": "./public/images/images/swiper/slide6.webp",
+          "title": "تصویر ویژه 6"
+        },
+        {
+          "id": 7,
+          "image": "./public/images/images/swiper/slide7.webp",
+          "title": "تصویر ویژه 7"
+        },
+        {
+          "id": 8,
+          "image": "./public/images/images/swiper/slide15.webp",
+          "title": "تصویر ویژه 8"
+        },
+        {
+          "id": 9,
+          "image": "./public/images/images/swiper/slide14.webp",
+          "title": "تصویر ویژه 9"
+        },
+        {
+          "id": 10,
+          "image": "./public/images/images/swiper/slide8.webp",
+          "title": "تصویر ویژه 10"
+        },
+        {
+          "id": 11,
+          "image": "./public/images/images/swiper/slide10.webp",
+          "title": "تصویر ویژه 11"
+        },
+        {
+          "id": 12,
+          "image": "./public/images/images/swiper/slide9.webp",
+          "title": "تصویر ویژه 12"
+        },
+        {
+          "id": 13,
+          "image": "./public/images/images/swiper/slide13.webp",
+          "title": "تصویر ویژه 13"
+        },
+        {
+          "id": 14,
+          "image": "./public/images/images/swiper/slide16.webp",
+          "title": "تصویر ویژه 14"
+        },
+        {
+          "id": 15,
+          "image": "./public/images/images/swiper/slide17.webp",
+          "title": "تصویر ویژه 15"
+        }
+      ],
+      "filters": {
+        "type": [
+          "همه",
+          "فیلم",
+          "سریال"
+        ],
+        "language": [
+          "همه",
+          "فارسی",
+          "زیرنویس فارسی",
+          "زیرنویس انگلیسی",
+          "زبان اصلی",
+          "چند زبانه"
+        ],
+        "age": [
+          "همه",
+          "زیر ۳ سال",
+          "تا ۶ سال",
+          "تا ۱۲ سال",
+          "تا ۱۵ سال",
+          "تا ۱۸ سال"
+        ],
+        "country": [
+          "ایران",
+          "آمریکا",
+          "ژاپن",
+          "انگلیس",
+          "کره جنوبی",
+          "ترکیه",
+          "فرانسه",
+          "کانادا",
+          "هند",
+          "آلمان",
+          "چین",
+          "اسپانیا",
+          "ایتالیا",
+          "خارجی",
+          "دیگر کشورها"
+        ],
+        "genre": [
+          "اکشن",
+          "کمدی",
+          "وحشت",
+          "انیمیشن",
+          "علمی تخیلی",
+          "تاک شو",
+          "عاشقانه",
+          "جنایی",
+          "درام",
+          "ماجراجویی",
+          "معمایی",
+          "ریلیتی شو",
+          "فانتزی",
+          "وسترن",
+          "هیجان انگیز",
+          "خانوادگی",
+          "جنگی",
+          "ورزشی",
+          "تاریخی",
+          "بیوگرافی",
+          "مذهبی",
+          "مستند",
+          "موزیکال",
+          "موسیقی",
+          "کوتاه",
+          "تئاتر",
+          "گیم شو"
+        ],
+        "year": [
+          "همه",
+          "2026",
+          "2025",
+          "2024",
+          "2023",
+          "2022",
+          "2021",
+          "2020",
+          "2019",
+          "2018",
+          "2017",
+          "2016",
+          "2015",
+          "2014",
+          "2013",
+          "2012",
+          "2011",
+          "2010"
+        ]
+      },
+      "comedyPlus": [
+        {
+          "id": 1,
+          "image": "/images/images/slider/komedi/k1.webp",
+          "title": "مردم معمولی"
+        },
+        {
+          "id": 2,
+          "image": "/images/images/slider/komedi/k2.webp",
+          "title": "بابا سیبیلو"
+        },
+        {
+          "id": 3,
+          "image": "/images/images/slider/komedi/k3.webp",
+          "title": "ما خونه نیستیم"
+        },
+        {
+          "id": 4,
+          "image": "/images/images/slider/komedi/k4.webp",
+          "title": "ناجورها"
+        },
+        {
+          "id": 5,
+          "image": "/images/images/slider/komedi/k5.webp",
+          "title": "شه سوار"
+        },
+        {
+          "id": 6,
+          "image": "/images/images/slider/komedi/k6.webp",
+          "title": "قسطنطنیه"
+        },
+        {
+          "id": 7,
+          "image": "/images/images/slider/komedi/k7.webp",
+          "title": "بارکد"
+        },
+        {
+          "id": 8,
+          "image": "/images/images/slider/komedi/k8.webp",
+          "title": "مطرب"
+        },
+        {
+          "id": 9,
+          "image": "/images/images/slider/komedi/k9.webp",
+          "title": "کلاهی برای باران"
+        },
+        {
+          "id": 10,
+          "image": "/images/images/slider/komedi/k10.webp",
+          "title": "دختر شیطان"
+        },
+        {
+          "id": 11,
+          "image": "/images/images/slider/komedi/k11.webp",
+          "title": "ماجراهای اینترنتی"
+        }
+      ],
+      "newReleases": [
+        {
+          "id": 1,
+          "image": "./public/images/images/slider/tazeha/t1.webp",
+          "title": "جک رایان: جنگ ارواح"
+        },
+        {
+          "id": 2,
+          "image": "./public/images/images/slider/tazeha/t2.webp",
+          "title": "ماموران دنیای رمز و راز"
+        },
+        {
+          "id": 3,
+          "image": "./public/images/images/slider/tazeha/t3.webp",
+          "title": "دلتنگ تو، عاشق تو"
+        },
+        {
+          "id": 4,
+          "image": "./public/images/images/slider/tazeha/t4.webp",
+          "title": "ریه آهنی"
+        },
+        {
+          "id": 5,
+          "image": "./public/images/images/slider/tazeha/t5.webp",
+          "title": "در منطقه خاکستری"
+        },
+        {
+          "id": 6,
+          "image": "./public/images/images/slider/tazeha/t6.webp",
+          "title": "برلین و بانویی با قاقم"
+        },
+        {
+          "id": 7,
+          "image": "./public/images/images/slider/tazeha/t12.webp",
+          "title": "راهزنان: در جستجوی طلا"
+        },
+        {
+          "id": 8,
+          "image": "./public/images/images/slider/tazeha/t8.webp",
+          "title": "پول ساز"
+        },
+        {
+          "id": 9,
+          "image": "./public/images/images/slider/tazeha/t9.webp",
+          "title": "مزخرفات"
+        },
+        {
+          "id": 10,
+          "image": "./public/images/images/slider/tazeha/t10.webp",
+          "title": "اسپایدر نوآر"
+        },
+        {
+          "id": 11,
+          "image": "./public/images/images/slider/tazeha/t11.webp",
+          "title": "راهنمای دخترهای خوب برای قتل"
+        }
+      ],
+      "filimoSchool": {
+        "logo": "./public/images/svg/logo-filimomad.svg",
+        "subtitle": "نگران تحصیل فرزندتون نباشید، وقتی مسیر رو بلد باشید آینده دیدنیه!",
+        "grades": [
+          {
+            "title": "پیش دبستانی",
+            "number": ""
+          },
+          {
+            "title": "اول",
+            "number": "۱"
+          },
+          {
+            "title": "دوم",
+            "number": "۲"
+          },
+          {
+            "title": "سوم",
+            "number": "۳"
+          },
+          {
+            "title": "چهارم",
+            "number": "۴"
+          },
+          {
+            "title": "پنجم",
+            "number": "۵"
+          },
+          {
+            "title": "ششم",
+            "number": "۶"
+          },
+          {
+            "title": "هفتم",
+            "number": "۷"
+          },
+          {
+            "title": "هشتم",
+            "number": "۸"
+          },
+          {
+            "title": "نهم",
+            "number": "۹"
+          },
+          {
+            "title": "دهم",
+            "number": "۱۰"
+          },
+          {
+            "title": "یازدهم",
+            "number": "۱۱"
+          },
+          {
+            "title": "دوازدهم",
+            "number": "۱۲"
+          }
+        ],
+        "features": [
+          {
+            "title": "معلم خصوصی آنلاین",
+            "icon": "teacher"
+          },
+          {
+            "title": "دوره های جذاب مهارتی",
+            "icon": "book"
+          },
+          {
+            "title": "دوره های جمع بندی شب امتحانی",
+            "icon": "exam"
+          },
+          {
+            "title": "دوره تیز هوشان",
+            "icon": "star"
+          }
+        ]
+      },
+      "iraniSeries": [
+        {
+          "image": "./public/images/images/slider/irani/i1.webp",
+          "title": "جوکر"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i2.webp",
+          "title": "جیران"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i3.webp",
+          "title": "زخم کاری"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i4.webp",
+          "title": "شغال"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i5.webp",
+          "title": "گل یا پوچ سری دوم"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i6.webp",
+          "title": "هزار و یک شب"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i7.webp",
+          "title": "شام ایرانی"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i8.webp",
+          "title": "کیمدی شو"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i9.webp",
+          "title": "پایتخت"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i10.webp",
+          "title": "محکوم"
+        },
+        {
+          "image": "./public/images/images/slider/irani/i11.webp",
+          "title": "شهرزاد"
+        }
+      ],
+      "hot": [
+        {
+          "image": "./public/images/images/slider/hot/h1.webp",
+          "title": "پیلوت"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h2.webp",
+          "title": "بی خانمان ها"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h3.webp",
+          "title": "بدنام"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h4.webp",
+          "title": "جهیزیه"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h5.webp",
+          "title": "ناجورها"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h6.webp",
+          "title": "شهری دور"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h7.webp",
+          "title": "هتل ترانسیلوانیا ۳ : تعطیلات تابستانی"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h8.webp",
+          "title": "مرد عینکی"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h9.webp",
+          "title": "بز قهرمان"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h10.webp",
+          "title": "من نفرت انگیز ۴"
+        },
+        {
+          "image": "./public/images/images/slider/hot/h11.webp",
+          "title": "سگ های نگهبان: فیلم بزرگ"
+        }
+      ],
+      "jenaei": [
+        {
+          "image": "./public/images/images/slider/jenaie/j1.webp",
+          "title": "برکینگ بد"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j2.webp",
+          "title": "عاشقانه"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j3.webp",
+          "title": "خوب، بد، جلف: رادیواکتیو"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j4.webp",
+          "title": "مغزهای کوچک زنگ زده"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j5.webp",
+          "title": "ساخت ایران ۲"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j6.webp",
+          "title": "بازنده"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j7.webp",
+          "title": "جنایت ۱۰۱"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j8.webp",
+          "title": "متری شیش و نیم"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j9.webp",
+          "title": "خشم مردانه"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j10.webp",
+          "title": "بی بدن"
+        },
+        {
+          "image": "./public/images/images/slider/jenaie/j12.webp",
+          "title": "علف زار"
+        }
+      ],
+      "footer": {
+        "links": [
+          {
+            "title": "تماشا با تلویزیون"
+          },
+          {
+            "title": "اپلیکیشن‌ها"
+          },
+          {
+            "title": "تماس و پشتیبانی"
+          },
+          {
+            "title": "فروشگاه"
+          },
+          {
+            "title": "سایر لینک‌ها"
+          }
+        ],
+        "socialLinks": [
+          {
+            "title": "آپارات"
+          },
+          {
+            "title": "توئیتر"
+          },
+          {
+            "title": "تلگرام"
+          },
+          {
+            "title": "اینستاگرام"
+          }
+        ]
+      },
+      "filimoSchoolPage": {
+        "grades": [
+          { "title": "پیش‌دبستانی", "number": "" },
+          { "title": "اول", "number": "۱" },
+          { "title": "دوم", "number": "۲" },
+          { "title": "سوم", "number": "۳" },
+          { "title": "چهارم", "number": "۴" },
+          { "title": "پنجم", "number": "۵" },
+          { "title": "ششم", "number": "۶" },
+          { "title": "هفتم", "number": "۷" },
+          { "title": "هشتم", "number": "۸" },
+          { "title": "نهم", "number": "۹" },
+          { "title": "دهم", "number": "۱۰" },
+          { "title": "یازدهم", "number": "۱۱" },
+          { "title": "دوازدهم", "number": "۱۲" }
+        ],
+      
+        "lessons": [
+          "./public/images/filimomad/mad1.jpg",
+          "./public/images/filimomad/mad2.jpg",
+          "./public/images/filimomad/mad3.jpg",
+          "./public/images/filimomad/mad4.jpg",
+          "./public/images/filimomad/mad5.jpg",
+          "./public/images/filimomad/mad6.jpg",
+          "./public/images/filimomad/mad21.jpg",
+          "./public/images/filimomad/mad22.jpg",
+          "./public/images/filimomad/mad23.jpg",
+          "./public/images/filimomad/mad24.jpg",
+          "./public/images/filimomad/mad25.jpg",
+          "./public/images/filimomad/mad26.jpg"
+        ]
+      },
+      "skills": [
+        { "image": "./public/images/filimomad/m1.jpg" },
+        { "image": "./public/images/filimomad/m2.jpg" },
+        { "image": "./public/images/filimomad/m3.jpg" },
+        { "image": "./public/images/filimomad/m4.jpg" },
+        { "image": "./public/images/filimomad/m5.jpg" },
+        { "image": "./public/images/filimomad/m6.jpg" },
+        { "image": "./public/images/filimomad/m21.jpg" },
+        { "image": "./public/images/filimomad/m22.jpg" },
+        { "image": "./public/images/filimomad/m23.jpg" },
+        { "image": "./public/images/filimomad/m24.jpg" },
+        { "image": "./public/images/filimomad/m25.jpg" },
+        { "image": "./public/images/filimomad/m26.jpg" }
+      ],
+      "alwaysTitle": "همیشه و همه‌جا، همراهت!",
+      "alwaysDescription": "با هر دستگاهی که داری و از هرجا که هستی وارد فیلیمومدرسه شو.",
+      "androidTvButton": "اپلیکیشن اندروید تلویزیون",
+      "androidButton": "سیستم عامل اندروید",
+      "iosButton": "سیستم عامل iOS",
+      "androidTvButton": "اپلیکیشن اندروید تلویزیون",
+      "androidButton": "سیستم عامل اندروید",
+      "iosButton": "سیستم عامل iOS",
+      
+      "testimonials": {
+        "title": "تجربه‌ی واقعی، نتایج واقعی!",
+        "description": "فیلیمومدرسه یادگیری را به یک مسیر ساده و جذاب تبدیل کرده. تو هم به ۶۰۰ هزار دانش‌آموز فیلیمومدرسه بپیوند!",
+        "items": [
+          {
+            "name": "امیرمحمد، چهارم",
+            "text": "انصافا نسبت به قیمتش خیلی می‌ارزه! الان هر کلاسی ثبت‌نام کنی بالای یه تومنه!"
+          },
+          {
+            "name": "باران، ششم",
+            "text": "✓ توضیح عالی\n✓ تست ها و سوال ها\nعالییییییییی حتما نصب کنید."
+          },
+          {
+            "name": "نیکا، هفتم",
+            "text": "زبان کره‌ای عالی! الان میتونم آهنگ‌های بی تی اس و کی‌پاپ رو بدون زیرنویس فارسی بفهمم 🤟"
+          },
+          {
+            "name": "محمدرضا، ششم",
+            "text": "اسکرچ رو با فیلیمومدرسه یاد گرفتم. امیدوارم پایتون هم بتونم یاد بگیرم و جاهای مختلف رو هک کنم 😁"
+          }
+        ]
+      },
+      "endSection": {
+        "image": "./public/images/filimomad/end.jpg",
+        "title": "مورد تأیید بهترین معلم‌ها",
+        "description": "بهترین معلم‌های کشور هم درس‌خواندن با فیلیمومدرسه را پیشنهاد می‌کنند."
+      },
+      "filimoSchoolFooter": {
+        "title": "تابستان مهارتی فیلیمومدرسه!",
+        "button": "ورود به فیلیمو مدرسه"
+      } }

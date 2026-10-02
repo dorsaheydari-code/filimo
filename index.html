@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تماشای آنلاین فیلم و سریال</title>
-    <link rel="shortcut icon" href="./public/images/icons/myicon.png">
+    <link rel="shortcut icon" href="./public/images/svg/filimo_logo_new.svg">
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
   </head>
   <body class="bg-[#151515]">
@@ -57,7 +57,8 @@
               <a href="#" class="hover:bg-[#403d36] transition-colors duration-300 inline-block py-2 rounded-xl font-[filimoDemo] text-xs">
                 فیلم
               </a>
-              <ul class="absolute top-full right-0 mt-0 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-200 z-50 bg-[#2b2b2b] p-4 rounded-lg shadow-lg min-w-[320px] grid grid-cols-2 gap-2">
+              <ul id="movie-categories"
+              class="absolute top-full right-0 mt-0 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-200 z-50 bg-[#2b2b2b] p-4 rounded-lg shadow-lg min-w-[320px] grid grid-cols-2 gap-2">
                 <li>
                   <a href="#" class="block px-4 py-2 rounded hover:bg-[#2f2f2f] transition-colors duration-200 font-[filimoDemo] text-xs">
                     انیمیشن
@@ -126,7 +127,8 @@
                 <a href="#" class=" hover:bg-[#403d36] transition-colors duration-300 inline-block py-2 rounded-xl font-[filimoDemo] text-xs">
                   سریال
                 </a>
-                <ul class="absolute top-full right-0 mt-0 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-200 z-50 bg-[#2b2b2b] p-4 rounded-lg shadow-lg min-w-[320px] grid grid-cols-2 gap-2">
+                <ul id="series-categories"
+                class="absolute top-full right-0 mt-0 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-200 z-50 bg-[#2b2b2b] p-4 rounded-lg shadow-lg min-w-[320px] grid grid-cols-2 gap-2">
                   <li>
                     <a href="#" class="block px-4 py-2 rounded hover:bg-[#2f2f2f] transition-colors duration-200 font-[filimoDemo] text-xs">
                       کمدی
@@ -230,7 +232,7 @@
                 <a href="#" class=" hover:bg-[#403d36] transition-colors duration-300 inline-block py-2 rounded-xlfont-[filimoDemo] text-xs">
                   مجموعه‌ها
                 </a>
-                <ul class="absolute top-full right-0 mt-0 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-200 z-50 bg-[#2b2b2b] p-4 rounded-lg shadow-lg min-w-[320px] grid grid-cols-2 gap-2 font-(family-name:filimoDemo)">
+                <ul id="collections" class="absolute top-full right-0 mt-0 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-200 z-50 bg-[#2b2b2b] p-4 rounded-lg shadow-lg min-w-[320px] grid grid-cols-2 gap-2 font-(family-name:filimoDemo)">
                   <li>
                     <a href="#" class="block px-4 py-2 rounded hover:bg-[#2f2f2f] transition-colors duration-200 font-[filimoDemo] text-xs">
                       مخصوص نابینایان
@@ -324,7 +326,7 @@
       <!-- swiper -->
       <div class="slider">
         <div class="swiper mySwiper relative  overflow-hidden">
-          <div class="swiper-wrapper">
+          <div id="swiper-wrapper" class="swiper-wrapper">
       
             <div class="swiper-slide relative flex items-center overflow-hidden">
               
@@ -807,7 +809,7 @@
   </div>
 
  
-  <div class="grid grid-cols-5 gap-4">
+  <div id="special-items-grid" class="grid grid-cols-5 gap-4">
 
     <div class="aspect-square rounded-lg bg-gray-200 flex items-center justify-center overflow-hidden">
       <img src="./public/images/images/swiper/alide1.webp" alt="تصویر گرید 1" class="w-full h-full object-cover">
@@ -888,54 +890,123 @@
   </div>
 </div>
 
-
 <div class="flex justify-center items-center mt-8 p-4 rounded-md bg-[#272727] dir-rtl mr-4 ml-4">
   <div class="flex flex-wrap items-center justify-center gap-4 w-full">
+    <div class="relative filter-dropdown">
+      <button
+        type="button"
+        data-filter="type"
+        class="filter-button bg-[#272727] border border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
+        <span class="font-[filimoDemo] text-xs">فیلم و سریال:</span>
 
-    <button class="bg-[#272727] border-1 border-[#575757]  text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
-      <span class="font-[filimoDemo] text-xs"> فیلم و سریال:</span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
-        <path id="ui-icon-arrow_drop_down" fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
+          <path fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
+        </svg>
+      </button>
+
+      <div
+        data-menu="type"
+        class="filter-menu hidden absolute top-full right-0 z-50 mt-2 min-w-[150px] rounded-lg border border-[#575757] bg-[#272727] p-2 shadow-xl">
+      </div>
+    </div>
+    <div class="relative filter-dropdown">
+      <button
+        type="button"
+        data-filter="language"
+        class="filter-button bg-[#272727] border border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
+        <span class="font-[filimoDemo] text-xs">زبان فیلم:</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
+          <path fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
+        </svg>
+      </button>
+
+      <div
+        data-menu="language"
+        class="filter-menu hidden absolute top-full right-0 z-50 mt-2 min-w-[170px] rounded-lg border border-[#575757] bg-[#272727] p-2 shadow-xl">
+      </div>
+    </div>
+    <div class="relative filter-dropdown">
+      <button
+        type="button"
+        data-filter="age"
+        class="filter-button bg-[#272727] border border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
+        <span class="font-[filimoDemo] text-xs">رده سنی:</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
+          <path fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
+        </svg>
+      </button>
+
+      <div
+        data-menu="age"
+        class="filter-menu hidden absolute top-full right-0 z-50 mt-2 min-w-[150px] rounded-lg border border-[#575757] bg-[#272727] p-2 shadow-xl">
+      </div>
+    </div>
+    <div class="relative filter-dropdown">
+      <button
+        type="button"
+        data-filter="country"
+        class="filter-button bg-[#272727] border border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
+        <span class="font-[filimoDemo] text-xs">کشور سازنده:</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
+          <path fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
+        </svg>
+      </button>
+
+      <div
+        data-menu="country"
+        class="filter-menu hidden absolute top-full right-0 z-50 mt-2 min-w-[170px] max-h-64 overflow-y-auto rounded-lg border border-[#575757] bg-[#272727] p-2 shadow-xl">
+      </div>
+    </div>
+    <div class="relative filter-dropdown">
+      <button
+        type="button"
+        data-filter="genre"
+        class="filter-button bg-[#272727] border border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
+        <span class="font-[filimoDemo] text-xs">ژانر:</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
+          <path fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
+        </svg>
+      </button>
+
+      <div
+        data-menu="genre"
+        class="filter-menu hidden absolute top-full right-0 z-50 mt-2 w-52 max-h-72 overflow-y-auto rounded-lg border border-[#575757] bg-[#272727] p-2 shadow-xl">
+      </div>
+    </div>
+    <div class="relative filter-dropdown">
+      <button
+        type="button"
+        data-filter="year"
+        class="filter-button bg-[#272727] border border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
+        <span class="font-[filimoDemo] text-xs">سال تولید:</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
+          <path fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
+        </svg>
+      </button>
+
+      <div
+        data-menu="year"
+        class="filter-menu hidden absolute top-full right-0 z-50 mt-2 w-36 max-h-64 overflow-y-auto rounded-lg border border-[#575757] bg-[#272727] p-2 shadow-xl">
+      </div>
+    </div>
+    <button
+      id="hd-filter"
+      type="button"
+      class="bg-[#272727] border border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
+      <span class="font-[filimoDemo] text-xs">فقط HD</span>
     </button>
-    <button class="bg-[#272727] border-1 border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
-      <span class="font-[filimoDemo] text-xs"> زبان فیلم:</span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
-        <path id="ui-icon-arrow_drop_down" fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
-      </svg>
-    </button>
-    <button class="bg-[#272727] border-1 border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
-      <span class="font-[filimoDemo] text-xs"> رده سنی:</span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
-        <path id="ui-icon-arrow_drop_down" fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
-      </svg>
-    </button>
-    <button class="bg-[#272727] border-1 border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
-      <span class="font-[filimoDemo] text-xs">کشور سازنده:</span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
-        <path id="ui-icon-arrow_drop_down" fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
-      </svg>
-    </button>
-    <button class="bg-[#272727] border-1 border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
-      <span class="font-[filimoDemo] text-xs"> ژانر:</span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
-        <path id="ui-icon-arrow_drop_down" fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
-      </svg>
-    </button>
-    <button class="bg-[#272727] border-1 border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 cursor-pointer hover:bg-[#2b2b2b]">
-      <span class="font-[filimoDemo] text-xs">سال تولید:</span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4">
-        <path id="ui-icon-arrow_drop_down" fill="currentColor" d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9h10a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17"></path>
-      </svg>
-    </button>
-    <button class="bg-[#272727] border-1 border-[#575757] text-[#e8e8e8] px-4 py-1.5 rounded-lg flex items-center space-x-1 hover:bg-[#2b2b2b]">
-      <span class="cursor-pointer font-[filimoDemo] text-xs"> فقط HD</span>
+    <button
+      id="apply-filters"
+      type="button"
+      class="bg-[#5d5d5d] text-[#303030] px-6 py-2 rounded-lg flex items-center space-x-2 cursor-pointer hover:bg-[#f5f5f5]">
+      <span class="font-[filimoDemo] text-xs">اعمال فیلتر</span>
     </button>
 
-   
-    <button class="bg-[#5d5d5d] text-[#303030] px-6 py-2 rounded-lg flex items-center space-x-2 cursor-pointer hover:bg-[#f5f5f5]">
-      <span class="font-[filimoDemo] text-xs"> اعمال فیلتر</span>
-    </button>
   </div>
 </div>
 
@@ -953,89 +1024,14 @@
   </div>
 
 <!-- card -->
-  <div class="swiper heroSwiper px-8 relative">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k1.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">مردم معمولی</span>
-        </div>
-      </div>
+<div id="comedy-plus-swiper" class="swiper heroSwiper px-8 relative">
 
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k2.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-centerfont-[filimoDemo] text-xs cursor-pointer">بابا سیبیلو</span>
-        </div>
-      </div>
+  <div id="comedy-plus-wrapper" class="swiper-wrapper">
+  </div>
 
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k3.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">ما خونه نیستیم</span>
-        </div>
-      </div>
+  <div class="swiper-button-next !text-amber-500 !w-8 !h-8 after:!text-2xl"></div>
+  <div class="swiper-button-prev !text-amber-500 !w-8 !h-8 after:!text-2xl"></div>
 
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k4.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">ناجورها</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k5.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">شه سوار</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k6.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">قسطنطنیه</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k7.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">بارکد</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k8.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">مطرب</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k9.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">کلاهی برای باران</span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k10.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">  دختر شیطان</span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="/images/images/slider/komedi/k11.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">  ماجراهای اینترنتی </span>
-        </div>
-      </div>
-    </div> 
-
- 
-    <div class="swiper-button-next !text-amber-500 !w-8 !h-8 after:!text-2xl"></div>
-    <div class="swiper-button-prev !text-amber-500 !w-8 !h-8 after:!text-2xl"></div>
-
-  </div> 
 </div>
 <!-- slide2 -->
 <div class="w-full mt-10 relative group"> 
@@ -1046,80 +1042,8 @@
 
 <!-- card -->
   <div class="swiper heroSwiper px-8 relative">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t1.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> جک رایان: جنگ ارواح</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t2.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-centerfont-[filimoDemo] text-xs cursor-pointer">ماموران دنیای رمز و راز </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t3.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">  دلتنگ تو، عاشق تو</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t4.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">ریه آهنی</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t5.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> در منطقه خاکستری</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t6.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">برلین و بانویی با قاقم</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t12.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> راهزنان: در جستجوی طلا </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t8.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">پول ساز</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t9.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">مزخرفات  </span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t10.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-white text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">  اسپایدر نوآر</span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/tazeha/t11.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">راهنمای دخترهای خوب برای قتل </span>
-        </div>
+    <div id="tazeha-wrapper" class="swiper-wrapper">
+     
       </div>
     </div> 
 
@@ -1130,6 +1054,299 @@
   </div> 
 </div>
 <!-- end-slide2 -->
+<!-- Filimo School -->
+<section id="filimo-school" class="w-full px-4 sm:px-8 mt-12 mb-10">
+
+  <div
+      class="relative mx-auto w-full max-w-[1200px] rounded-[20px] bg-[#2b3934] px-5 py-9 sm:px-8 lg:px-12"
+      dir="rtl"
+  >
+
+      <button
+          type="button"
+          onclick="document.getElementById('filimo-school').remove()"
+          aria-label="بستن فیلیمو مدرسه"
+          class="absolute left-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white backdrop-blur-md transition hover:bg-white/20"
+      >
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              class="h-5 w-5"
+          >
+              <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 6l12 12M18 6L6 18"
+              />
+          </svg>
+      </button>
+      <div class="flex flex-col items-center">
+
+          <div class="flex items-center justify-center gap-3">
+
+              <img
+                  src="./public/images/svg/logo-filimomad.svg"
+                  alt="فیلیمو مدرسه"
+                  class="h-8 sm:h-10 w-auto"
+              />
+          </div>
+          <h5 class="mt-4 text-center text-sm sm:text-base text-white/80 font-[filimoDemo]">
+              نگران تحصیل فرزندتون نباشید، وقتی مسیر رو بلد باشید آینده دیدنیه!
+          </h5>
+
+      </div>
+      <div  id="filimo-school-grades" class="mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
+          <div
+          class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+          >
+              <span class="text-sm font-[filimoDemo]">
+                  پیش دبستانی
+              </span>
+          </div>
+          <div
+          class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+          >
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                  ۱
+              </span>
+
+              <span class="text-sm font-[filimoDemo]">
+                  اول
+              </span>
+          </div>
+          <div
+          class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+          >
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                  ۲
+              </span>
+
+              <span class="text-sm font-[filimoDemo]">
+                  دوم
+              </span>
+          </div>
+          <div
+          class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+          >
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                  ۳
+              </span>
+
+              <span class="text-sm font-[filimoDemo]">
+                  سوم
+              </span>
+          </div>
+          <div
+          class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+              >
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                      ۴
+                  </span>
+  
+                  <span class="text-sm font-[filimoDemo]">
+                      چهارم
+                  </span>
+              </div>
+              <div
+              class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+              >
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                      ۵
+                  </span>
+  
+                  <span class="text-sm font-[filimoDemo]">
+                      پنجم
+                  </span>
+              </div>
+              <div
+              class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+              >
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                      ۶
+                  </span>
+  
+                  <span class="text-sm font-[filimoDemo]">
+                      ششم
+                  </span>
+              </div>
+              <div
+              class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+              >
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                      ۷
+                  </span>
+  
+                  <span class="text-sm font-[filimoDemo]">
+                      هفتم
+                  </span>
+              </div>
+              <div
+              class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+              >
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                      ۸
+                  </span>
+  
+                  <span class="text-sm font-[filimoDemo]">
+                      هشتم
+                  </span>
+              </div>
+              <div
+              class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+              >
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                      ۹
+                  </span>
+  
+                  <span class="text-sm font-[filimoDemo]">
+                      نهم
+                  </span>
+              </div>
+              <div
+              class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+              >
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                      ۱۰
+                  </span>
+  
+                  <span class="text-sm font-[filimoDemo]">
+                      دهم
+                  </span>
+              </div>
+              <div
+              class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+              >
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                      ۱۱
+                  </span>
+  
+                  <span class="text-sm font-[filimoDemo]">
+                    یازدهم
+                </span>
+            </div>
+            <div
+            class="flex min-h-[46px] items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/[0.04] px-3 py-2 text-white backdrop-blur-sm cursor-pointer hover:bg-black/10 transition"
+            >
+                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#2b3934] border border-white/15 text-xs text-white">
+                    ۱۲
+                </span>
+
+                <span class="text-sm font-[filimoDemo]">
+                    دوازدهم
+                </span>
+            </div>
+
+        </div>
+        <div class="mt-8 h-px w-full bg-white/20"></div>
+        <div id="filimo-school-features" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="flex items-center justify-center gap-2 text-white">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    class="h-6 w-6"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"
+                    />
+                    <circle cx="9" cy="7" r="4"/>
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19 8v6M22 11h-6"
+                    />
+                </svg>
+
+                <span class="font-bold text-sm font-[filimoDemo]">
+                    معلم خصوصی آنلاین
+                </span>
+            </div>
+            <div class="flex items-center justify-center gap-2 text-white">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    class="h-6 w-6"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v15M4 4.5A2.5 2.5 0 016.5 2H20v17H6.5A2.5 2.5 0 014 16.5v-12z"
+                    />
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 16.5A2.5 2.5 0 016.5 14H20"
+                    />
+                </svg>
+                <span class="font-bold text-sm font-[filimoDemo]">
+                    دوره های جذاب مهارتی
+                </span>
+            </div>
+            <div class="flex items-center justify-center gap-2 text-white">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    class="h-6 w-6"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8 3h8l3 3v15H5V3h3z"
+                    />
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8 3v4h8V3M8 12h8M8 16h5"
+                    />
+                </svg>
+
+                <span class="font-bold text-sm font-[filimoDemo]">
+                    دوره های جمع بندی شب امتحانی
+                </span>
+            </div>
+            <div class="flex items-center justify-center gap-2 text-white">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"stroke="currentColor"
+                    stroke-width="1.8"
+                    class="h-6 w-6"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 3l2.2 4.8L19 10l-4.8 2.2L12 17l-2.2-4.8L5 10l4.8-2.2L12 3z"
+                    />
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19 16l.8 1.7L21.5 18l-1.7.8L19 20.5l-.8-1.7-1.7-.8 1.7-.8L19 16z"
+                    />
+                </svg>
+
+                <span class="font-bold text-sm font-[filimoDemo]">
+                    دوره تیز هوشان
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <!-- slide3 -->
 <div class="w-full mt-10 relative group"> 
   <div class="flex items-center justify-between px-8 mb-4">
@@ -1140,80 +1357,9 @@
 
 <!-- card -->
   <div class="swiper heroSwiper px-8 relative">
-    <div class="swiper-wrapper">
+    <div id="irani-wrapper" class="swiper-wrapper">
       <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i1.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs">جوکر </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i2.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> جیران</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i3.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">زخم کاری </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i4.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> شغال</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i5.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-centerfont-[filimoDemo] text-xs cursor-pointer">گل یا پوچ سری دوم </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i6.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> هزار و یک شب</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i7.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 font-[filimoDemo] text-xs cursor-pointer">شام ایرانی</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i8.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">کیمدی شو </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i9.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">پایتخت  </span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i10.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-centerfont-[filimoDemo] text-xs cursor-pointer">   محکوم</span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/irani/i11.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">شهرزاد</span>
-        </div>
+       
       </div>
     </div> 
 
@@ -1229,86 +1375,13 @@
   <div class="flex items-center justify-between px-8 mb-4">
     <h2 class="text-[#e8e8e8] text-lg font-bold font-[filimoDemo] cursor-pointer"> داغ‌ترین‌ها</h2>
     <a href="#" class="text-amber-500 text-sm hover:text-amber-400 font-[filimoDemo]">مشاهده همه ›</a>
-
-
   </div>
 
 <!-- card -->
   <div class="swiper heroSwiper px-8 relative">
-    <div class="swiper-wrapper">
+    <div id="hot-wrapper" class="swiper-wrapper">
       <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h1.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">پیلوت </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h2.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">  بی خانمان ها</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h3.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> بدنام </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h4.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> جهیزیه</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h5.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">ناجورها </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h6.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">   شهری دور   </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h7.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">  هتل ترانسیلوانیا ۳ : تعطیلات تابستانی</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="../public/images/images/slider/hot/h8.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> مرد عینکی  </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h9.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">بز قهرمان   </span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h10.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">   من نفرت انگیز ۴</span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/hot/h11.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">سگ های نگهبان: فیلم بزرگ</span>
-        </div>
+       
       </div>
     </div> 
 
@@ -1324,85 +1397,14 @@
   <div class="flex items-center justify-between px-8 mb-4">
     <h2 class="text-[#e8e8e8] text-lg font-bold font-[filimoDemo] cursor-pointer"> جنایی</h2>
     <a href="#" class="text-amber-500 text-sm hover:text-amber-400 font-[filimoDemo]">مشاهده همه ›</a>
-  
+
   </div>
 
 <!-- card -->
   <div class="swiper heroSwiper px-8 relative">
-    <div class="swiper-wrapper">
+    <div id="jenaei-wrapper"  class="swiper-wrapper">
       <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j1.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8]text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">برکینگ بد </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j2.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">    عاشقانه</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j3.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> خوب، بد، جلف: رادیواکتیو </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j4.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8]text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> مغزهای کوچک زنگ زده</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j5.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">ساخت ایران ۲ </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j6.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">بازنده </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j7.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">جنایت ۱۰۱ </span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="../public/images/images/slider/jenaie/j8.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> متری شیش و نیم</span>
-        </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j9.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer">خشم مردانه </span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j10.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> بی بدن</span>
-        </div>
-      </div>
-      <div class="swiper-slide"> 
-        <div class="w-40 flex flex-col items-center">
-          <img src="./public/images/images/slider/jenaie/j12.webp" class="w-full h-56 rounded-lg object-cover" />
-          <span class="text-[#e8e8e8] text-[12px] mt-2 text-center font-[filimoDemo] text-xs cursor-pointer"> علف زار</span>
-        </div>
+  
       </div>
     </div> 
 
@@ -1418,28 +1420,7 @@
   <footer class="fixed bottom-0 left-0 right-0 w-full bg-[#151515] border-t border-white/5 z-50">
   
     <div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between px-4 lg:px-6 py-3 max-w-[1400px] mx-auto">
-      <div class="flex flex-wrap justify-center lg:justify-start gap-3 lg:gap-6">
-  
-        <a href="#" class="text-[#e8e8e8] hover:bg-[#2b2b2b] px-2 py-1 rounded-xs transition-colors duration-200 cursor-pointer font-[filimoDemo] text-[11px] lg:text-xs">
-          تماشا با تلویزیون
-        </a>
-  
-        <a href="#" class="text-[#e8e8e8] hover:bg-[#2b2b2b] px-2 py-1 transition-colors duration-200 cursor-pointer rounded-xs font-[filimoDemo] text-[11px] lg:text-xs">
-          اپلیکیشن‌ها
-        </a>
-  
-        <a href="#" class="text-[#e8e8e8] hover:bg-[#2b2b2b] px-2 py-1 transition-colors duration-200 cursor-pointer rounded-xs font-[filimoDemo] text-[11px] lg:text-xs">
-          تماس و پشتیبانی
-        </a>
-  
-        <a href="#" class="text-[#e8e8e8] px-2 py-1 transition-colors duration-200 cursor-pointer rounded-xs hover:bg-[#2b2b2b] font-[filimoDemo] text-[11px] lg:text-xs">
-          فروشگاه
-        </a>
-  
-        <a href="#" class="text-[#e8e8e8] hover:bg-[#2b2b2b] px-2 py-1 transition-colors duration-200 cursor-pointer rounded-xs font-[filimoDemo] text-[11px] lg:text-xs">
-          سایر لینک‌ها
-        </a>
-  
+      <div id="footer-links" class="flex flex-wrap justify-center lg:justify-start gap-3 lg:gap-6">
       </div>
 
       <div class="relative group mx-auto lg:mx-0">
@@ -1461,24 +1442,7 @@
           </svg>
         </div>
   
-        <div class="absolute bottom-full mb-2 right-0 lg:right-0 left-1/2 lg:left-auto -translate-x-1/2 lg:translate-x-0 w-36 lg:w-40 bg-[#1e1e1e] border border-white/10 rounded-md shadow-2xl opacity-0 invisible translate-y-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 z-50 overflow-hidden">
-  
-          <a href="#" class="block px-4 py-2 text-[11px] lg:text-[12px] text-[#e8e8e8] hover:bg-[#2b2b2b] transition-colors font-[filimoDemo]">
-            آپارات
-          </a>
-  
-          <a href="#" class="block px-4 py-2 text-[11px] lg:text-[12px] text-[#e8e8e8] hover:bg-[#2b2b2b] transition-colors font-[filimoDemo]">
-            توئیتر
-          </a>
-  
-          <a href="#" class="block px-4 py-2 text-[11px] lg:text-[12px] text-[#e8e8e8] hover:bg-[#2b2b2b] transition-colors font-[filimoDemo]">
-            تلگرام
-          </a>
-  
-          <a href="#" class="block px-4 py-2 text-[11px] lg:text-[12px] text-[#e8e8e8] hover:bg-[#2b2b2b] transition-colors font-[filimoDemo]">
-            اینستاگرام
-          </a>
-  
+        <div id="social-links" class="absolute bottom-full mb-2 right-0 lg:right-0 left-1/2 lg:left-auto -translate-x-1/2 lg:translate-x-0 w-36 lg:w-40 bg-[#1e1e1e] border border-white/10 rounded-md shadow-2xl opacity-0 invisible translate-y-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 z-50 overflow-hidden">
         </div>
       </div>
   
@@ -1490,26 +1454,6 @@
   
   <!-- end footer -->
     <script type="module" src="./src/js/main.js"></script>
-<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
- <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-
   <script>
 const header = document.getElementById('main-header');
 
@@ -1548,35 +1492,6 @@ window.addEventListener('resize', checkHeaderOverlap);
 checkHeaderOverlap();
 
   </script>
-  
-    <script>
-      const heroSwiper = new Swiper(".heroSwiper", {
-        slidesPerView: 2,      
-        spaceBetween: 10,    
-        loop: true,            
-        
-        navigation: {
-          nextEl: ".heroSwiper .swiper-button-next",
-          prevEl: ".heroSwiper .swiper-button-prev",
-        },
-    
-        breakpoints: {
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 15, 
-          },
-          768: {
-            slidesPerView: 6,
-            spaceBetween: 20, 
-          },
-          1024: {
-            slidesPerView: 8,
-            spaceBetween: 20,
-          },
-        },
-      });
-    </script>
-    
     
   </body>
 </html>
